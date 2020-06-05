@@ -1,4 +1,24 @@
 # OpenTrade is the best opensource cryptocurrency exchange!
+Resolve to some issues
+
+Accountserver not loading /Server not loading / databaseServer not loading
+
+
+Under constants.js - Make sure that the sql database is pointing to correct location 
+const DATABASE_PATH = '/root/opentrade/accountsserver/database/sqlite_accounts.db';
+
+
+///nvm alternative 
+sudo npm install n -g
+
+For the latest stable version:
+
+sudo n 12.6.0
+///
+
+sudo node main.js under main locations 
+
+
 
 Live version: https://trade.multicoins.org/
 
