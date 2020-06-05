@@ -10,6 +10,14 @@ Step-by-step install instructions:
 3. Log in to Droplet over SSH (You will receive a email with IP, username and password)
 4
 
+///nvm alternative 
+sudo npm install n -g
+
+For the latest stable version:
+
+sudo n 12.6.0
+///
+
 ```
 [sudo] apt-get update
 [sudo] apt-get install build-essential libssl-dev curl -y
