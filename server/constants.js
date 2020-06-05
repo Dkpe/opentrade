@@ -18,7 +18,7 @@ exports.DEBUG_LOG = true;
 exports.share = {
    tradeEnabled: true,
    withdrawEnabled: true,
-   recaptchaEnabled: false,
+   recaptchaEnabled: false,  //'disabled' Enable if private constrains is filled in 
    emailVerificationEnabled: 'enabled', //'disabled' // !!! WARNING !!! DANGER !!! DO NOT CHANGE IT IN PRODUCTION !!! FOR TESTS ONLY !!!
    pinVerificationEnabled: 'enabled', //'disabled'
    
@@ -32,10 +32,12 @@ exports.share = {
 
 exports.SESSION_TIME = 3600*1000; //one hour
 
-exports.recaptcha_pub_key = "6LeX5SQUAAAAAKTieM68Sz4MECO6kJXsSR7_sGP1";
+exports.recaptcha_pub_key = "6LeX5SQUAAAAAKTieM68Sz4MECO6kJXsSR7_sGP1"; //Google Public Key 
 const MAX_IP_CONNECTIONS = 100;
 
 const MAX_USER_WITHDRAW = 100; //Percentage from trade deposit
+
+//  point your directory to the SQLlite db  '/USER/opentrade/server/database/sqlite.db'
 
 const DATABASE_PATH = '/root/opentrade/server/database/sqlite.db';
 const PRIVATE_CONSTANTS_PATH = "./modules/private_constants";
